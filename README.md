@@ -24,6 +24,12 @@ wrangler d1 create todo
 wrangler d1 execute todo --local --file=todo.sql
 ```
 
+PrepareDB:
+```
+npm run migrateDev
+npm run migrateProd
+```
+
 Dev:
 
 ```

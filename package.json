@@ -2,6 +2,9 @@
   "scripts": {
     "dev": "wrangler dev --live-reload src/index.tsx",
     "deploy": "wrangler deploy --minify src/index.tsx",
+    "createDb": "wrangler d1 create todo",
+    "migrateDev": "wrangler d1 execute todo --local --file=todo.sql",
+    "migrateProd": "wrangler d1 execute todo --file=todo.sql"
   },
   "dependencies": {
     "@hono/zod-validator": "^0.1.9",
